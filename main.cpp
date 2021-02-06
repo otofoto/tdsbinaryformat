@@ -1992,7 +1992,7 @@ void ParseNames(const char * start)
 	}
 }
 
-int main(int argc, const char * argv[])
+int wmain(int argc, const char * argv[])
 {
 	HANDLE hfile = CreateFile(L"test.tds", FILE_READ_DATA, FILE_SHARE_READ, 0, OPEN_EXISTING, FILE_FLAG_RANDOM_ACCESS, 0);
 	HANDLE hmap = CreateFileMapping(hfile, 0, PAGE_READONLY, 0, 0, 0);
